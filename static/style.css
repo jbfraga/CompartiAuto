@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    flex: 1;
+    width: 100%;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.titulo h1 {
+    font-size: larger;
+}
+
+.conteudo-principal {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.conteudo-principal iframe {
+    width: 100%;
+    height: 99%;
+}
+
+.rodape {
+    flex: 1;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+/* Formulario Login */
+.formulario-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    padding: 0 10px;
+    top: 40%;
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.formulario-login input {
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.formulario-login input::placeholder {
+    color: lightgray;
+}
+
+.formulario-login input[type="submit"] {
+    border: solid 1px lightgray;
+    margin-top: 10px;
+}
+
+/* Tela 1 */
+.tela1 {
+    max-width: 600px;
+    margin: auto;
+}
+
+.filtro-tela1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filtro-tela1 select {
+    padding: 10px;
+    font-size: medium;
+}
+
+.veiculos-tela1 {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.list-veiculo {
+    width: 100%;
+    height: 100%;
+    border: solid 1px transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.list-veiculo-item {
+    width: 100%;
+    max-width: 300px;
+    border-left: solid 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.list-veiculo-item p {
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -28px;
+    width: 100%;
+}
+
+.list-veiculo-item img {
+    width: 100%;
+}
+
+.disponivel {
+    border-color: green;
+}
+
+.alocado {
+    border-color: red;
+}
