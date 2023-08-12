@@ -173,6 +173,12 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 600px;
+    scale: 0;
+    transition: .2s;
+}
+
+.show-popup{
+    scale: 1;
 }
 
 .container-form {
@@ -206,7 +212,7 @@ body {
     font-weight: 300;
 }
 
-.container-form form button,
+.container-form button,
 .selecionar-opcao button {
     border: solid 1px lightgray;
     border-radius: 10px;
@@ -219,4 +225,19 @@ body {
 .info-ult-motorista {
     font-size: smaller;
     font-weight: 200;
+}
+
+.tela-qr-code {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.file-scan-btn {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 30px;
+    border: dotted 1px black;
+    border-radius: 10px;
 }
