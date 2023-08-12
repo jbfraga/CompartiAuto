@@ -187,7 +187,8 @@ body {
     visibility: visible;
 }
 
-.container-form form {
+.container-form form,
+.selecionar-opcao {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -205,7 +206,8 @@ body {
     font-weight: 300;
 }
 
-.container-form form button {
+.container-form form button,
+.selecionar-opcao button {
     border: solid 1px lightgray;
     border-radius: 10px;
     padding: 10px;
