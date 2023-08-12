@@ -1,10 +1,38 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="../static/style.css">
 </head>
+
 <body class="tela1">
+
     
-    <section class="filtro-tela1">
+    <!-- Se Veiculo Disponivel -->
+    <div class="popup">
+
+        <div class="container-form">
+
+            <p>Este veiculo esta <strong>Disponivel</strong></p>
+            <p class="info-ult-motorista">Ultimo(a) Motorista <em>Roberto Gomes</em></p>
+
+            <form action="#">
+
+                <input type="text" name="placa" hidden>
+                <input type="text" name="status" hidden>
+
+                <input type="date" name="date">
+                <input type="time" name="time">
+
+                <button>Reservar</button>
+                <button>Cancelar</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <section class="filtro-tela1 focus-off">
         <label for="local-base">Selecionar Base</label>
         <select name="local-base" id="local-base">
             <option value="0">Selecionar Base</option>
@@ -17,76 +45,66 @@
         <p>Selecionar Veiculo ↓</p>
     </section>
 
-    <section class="veiculos-tela1">
-    
+    <section class="veiculos-tela1 focus-off">
+
         <div class="list-veiculo">
-            
-            <div class="list-veiculo-item">
-                
-                <img src="../static/img-veiculo.png" alt="">
-                <p>
-                    <strong>Base : </strong>Castelao
-                    <br>
-                    <strong>Status : </strong>Oficina
-                </p>
+
+            <div class="list-veiculo-item disponivel" status-veiculo="disponivel" placa="ABC-1234"
+                onclick="selecionarVeiculo(this)">
+
+                <img src="../static/img-veiculo.png" alt="img carro">
+
+                <div class="detalhes">
+
+                    <p>
+                        <strong>Base : </strong>Castelao
+                        <br>
+                        <strong>Status : </strong>Disponivel
+                    </p>
+
+                    <p class="placa">ABC-1234</p>
+
+                </div>
 
             </div>
 
-            <div class="list-veiculo-item alocado">
-                
-                <img src="../static/img-veiculo.png" alt="">
-                <p>
-                    <strong>Base : </strong>Castelao
-                    <br>
-                    <strong>Status : </strong>Alocado
-                </p>
+            <div class="list-veiculo-item alocado" status-veiculo="alocado" placa="ABC-1235"
+                onclick="selecionarVeiculo(this)">
+
+                <img src="../static/img-veiculo.png" alt="img carro">
+
+                <div class="detalhes">
+
+                    <p>
+                        <strong>Base : </strong>Castelao
+                        <br>
+                        <strong>Status : </strong>Alocado
+                    </p>
+
+                    <p class="placa">ABC-1235</p>
+
+                </div>
 
             </div>
 
-            <div class="list-veiculo-item">
-                
-                <img src="../static/img-veiculo.png" alt="">
-                <p>
-                    <strong>Base : </strong>Castelao
-                    <br>
-                    <strong>Status : </strong>Disponivel
-                </p>
+            <div class="list-veiculo-item" status-veiculo="oficina" placa="ABC-1236" onclick="selecionarVeiculo(this)">
+
+                <img src="../static/img-veiculo.png" alt="img carro">
+
+                <div class="detalhes">
+
+                    <p>
+                        <strong>Base : </strong>Castelao
+                        <br>
+                        <strong>Status : </strong>Oficina
+                    </p>
+
+                    <p class="placa">ABC-1236</p>
+
+                </div>
 
             </div>
 
-            <div class="list-veiculo-item disponivel">
-                
-                <img src="../static/img-veiculo.png" alt="">
-                <p>
-                    <strong>Base : </strong>Castelao
-                    <br>
-                    <strong>Status : </strong>Disponivel
-                </p>
-
-            </div>
-
-            <div class="list-veiculo-item">
-                
-                <img src="../static/img-veiculo.png" alt="">
-                <p>
-                    <strong>Base : </strong>Castelao
-                    <br>
-                    <strong>Status : </strong>Disponivel
-                </p>
-
-            </div>
-
-            <div class="list-veiculo-item">
-                
-                <img src="../static/img-veiculo.png" alt="">
-                <p>
-                    <strong>Base : </strong>Castelao
-                    <br>
-                    <strong>Status : </strong>Disponivel
-                </p>
-
-            </div>
-        
         </div>
 
     </section>

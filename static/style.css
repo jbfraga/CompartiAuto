@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
+
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -122,7 +125,7 @@ body {
     background-color: rgba(0, 0, 0, .2);
 }
 
-.list-veiculo-item p {
+.list-veiculo-item div.detalhes {
     position: relative;
     background-color: rgba(0, 0, 0, .5);
     color: white;
@@ -130,6 +133,16 @@ body {
     border-radius: 10px;
     margin-top: -28px;
     width: 100%;
+}
+
+.list-veiculo-item div.detalhes p.placa {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    border: solid 1px white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 
 .list-veiculo-item img {
@@ -142,4 +155,66 @@ body {
 
 .alocado {
     border-color: red;
+}
+
+.focus-off {
+    filter: blur(4px);
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 99;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.container-form {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+
+    visibility: visible;
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    align-items: center;
+}
+
+.container-form form input {
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid 1px gray;
+    text-align: center;
+    font-size: large;
+    font-weight: 300;
+}
+
+.container-form form button {
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: medium;
+    width: 100%;
+}
+
+.info-ult-motorista {
+    font-size: smaller;
+    font-weight: 200;
 }
