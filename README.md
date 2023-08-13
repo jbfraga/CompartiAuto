@@ -1,13 +1,5 @@
-# sistema-compartiauto
+# Banco de dados
 
-Controle de carro compartilhado em uma organizacao
+Link para baixar o ambiente client do banco de dados SQLite
 
-
-LOGIN
-
-![1691721532184](image/README/1691721532184.png)
-
-
-# Tela 1
-
-![1691721635222](image/README/1691721635222.png)
+[https://sqlitebrowser.org/dl/](https://sqlitebrowser.org/dl/)
